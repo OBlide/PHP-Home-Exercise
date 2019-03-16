@@ -4,7 +4,8 @@ class Teacher
 {
     private $fname;
     private $lname;
-    private $courses=array();
+    private $yearofbirth;
+    private $subjects=array();
 
     public function getFname(){
         return $this->fname;
@@ -23,12 +24,25 @@ class Teacher
     $this->lname = $lname;
 
     }
-    public function getCourses(){
-        return $this->courses;
+
+    public function getYearOfBirth()
+    {
+          return $this->yearofbirth;
+
+    }
+
+      public function setYearOfBirth($param)
+    {
+            $this->yearofbirth = $param;
+
+    }
+
+    public function getTeachingSubjects(){
+        return $this->subjects;
     
     }
-    public function setCourses($param){
-        array_push($this->courses,$param);
+    public function setTeachingSubjects($param){
+        array_push($this->subjects,$param);
     
     }
 
