@@ -4,7 +4,7 @@ class Student
 {
     private $fname;
     private $lname;
-    private $yearofbirth;
+    private $age;
     private $credits;
     private $courses=array();
       public function getFname()
@@ -23,13 +23,13 @@ class Student
       {
           $this->lname = $param;
       }
-      public function getYearOfBirth()
+      public function getAge()
       {
-          return $this->yearofbirth;
+          return $this->age;
       }
-      public function setYearOfBirth($param)
+      public function setAge($param)
       {
-            $this->yearofbirth = $param;
+            $this->age = $param;
       }
       public function getCreditPoints()
       {
