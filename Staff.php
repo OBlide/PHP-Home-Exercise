@@ -4,35 +4,44 @@ class Staff
 {
     private $fname;
     private $lname;
-    private $courses=array();
-
-    public function getFname(){
-        return $this->fname;
+    private $yearofbirth;
+    private $vacancy;
     
-    }
-    public function setFname($param){
-        $this->fname = $fname;
+      public function getFname()
+      {
+          return $this->fname;
+      }
+      public function setFname($param)
+      {
+          $this->fname = $param;
+      }
+      public function getLname()
+      {
+          return $this->lname;
+      }
+      public function setLname($param)
+      {
+          $this->lname = $param;
+      }
+      public function getAge()
+      {
+          return $this->age;
+      }
+      public function setAge($param)
+      {
+            $this->age = $param;
+      }
+      public function getVacancy()
+      {
+          return $this->vacancy;
+      }
+      public function setVacancy($param)
+      {
+        $this->vacancy = $param;
+      }
     
-    }
-    public function getLname(){
-        return $this->lname;
     
-    }
-
-    public function setLname($param){
-    $this->lname = $lname;
-
-    }
-    public function getCourses(){
-        return $this->courses;
     
-    }
-    public function setCourses($param){
-        array_push($this->courses,$param);
-    
-    }
-
-
 }
 
 ?>

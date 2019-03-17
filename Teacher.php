@@ -4,38 +4,46 @@ class Teacher
 {
     private $fname;
     private $lname;
-    private $yearofbirth;
+    private $age;
+    private $department;
     private $subjects=array();
 
-    public function getFname(){
-        return $this->fname;
-    
-    }
-    public function setFname($param){
-        $this->fname = $fname;
-    
-    }
-    public function getLname(){
-        return $this->lname;
-    
-    }
+    public function getFname()
+      {
+          return $this->fname;
+      }
+      public function setFname($param)
+      {
+          $this->fname = $param;
+      }
+      public function getLname()
+      {
+          return $this->lname;
+      }
+      public function setLname($param)
+      {
+          $this->lname = $param;
+      }
 
-    public function setLname($param){
-    $this->lname = $lname;
-
-    }
-
-    public function getYearOfBirth()
+       public function getAge()
     {
-          return $this->yearofbirth;
+          return $this->age;
 
     }
 
-      public function setYearOfBirth($param)
+      public function setAge($param)
     {
-            $this->yearofbirth = $param;
+            $this->age = $param;
 
     }
+    public function getDepartment()
+      {
+          return $this->department;
+      }
+      public function setDepartment($param)
+      {
+        $this->department = $param;
+      }
 
     public function getTeachingSubjects(){
         return $this->subjects;
